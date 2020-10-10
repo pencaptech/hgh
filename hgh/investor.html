@@ -1,0 +1,979 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Hyderabad Group Housing | Invester</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+        <style>
+        	.im-strip-banner {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                min-height: 6.8rem;
+                padding: 1.6rem;
+                background-color: #dfedf4;
+            }
+            .checkbox {padding-left: 49px; }
+            .checkbox label {
+                display: inline-block;
+                position: relative;
+                padding-left: 5px;
+            }
+            .checkbox label::before {
+              content: "";
+              display: inline-block;
+              position: absolute;
+              width: 17px;
+              height: 17px;
+              left: 0;
+              margin-left: -20px;
+              border: 1px solid #663074c2;
+              border-radius: 3px;
+              background-color: #fff;
+              -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+              -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+              transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+            }
+            .checkbox label::after {
+              display: inline-block;
+              position: absolute;
+              width: 16px;
+              height: 16px;
+              left: 0;
+              top: 0;
+              margin-left: -20px;
+              padding-left: 3px;
+              padding-top: 3px;
+              font-size: 11px;
+              color: #555555;
+            }
+            .checkbox input[type="checkbox"] {opacity: 0; }
+            .checkbox input[type="checkbox"]:focus + label::before {
+              outline: thin dotted;
+              outline: 5px auto -webkit-focus-ring-color;
+              outline-offset: -2px;
+            }
+            .checkbox input[type="checkbox"]:checked + label::after {
+              font-family: 'FontAwesome';
+              content: "\f00c";
+            }
+            .checkbox input[type="checkbox"]:disabled + label {opacity: 0.65; }
+            .checkbox input[type="checkbox"]:disabled + label::before {
+                background-color: #eeeeee;
+                cursor: not-allowed;
+            }
+            .checkbox.checkbox-circle label::before {border-radius: 50%; }
+            .checkbox.checkbox-inline {margin-top: -45px; }
+            .radio {padding-left: 49px; }
+            .radio label {
+                display: inline-block;
+                position: relative;
+                padding-left: 5px;
+            }
+            .radio label::before {
+              content: "";
+              display: inline-block;
+              position: absolute;
+              width: 17px;
+              height: 17px;
+              left: 0;
+              margin-left: -20px;
+              border: 1px solid #663074c2;
+              border-radius: 50%;
+              background-color: #fff;
+              -webkit-transition: border 0.15s ease-in-out;
+              -o-transition: border 0.15s ease-in-out;
+              transition: border 0.15s ease-in-out;
+            }
+            .radio label::after {
+              display: inline-block;
+              position: absolute;
+              content: " ";
+              width: 11px;
+              height: 11px;
+              left: 3px;
+              top: 3px;
+              margin-left: -20px;
+              border-radius: 50%;
+              background-color: #555555;
+              -webkit-transform: scale(0, 0);
+              -ms-transform: scale(0, 0);
+              -o-transform: scale(0, 0);
+              transform: scale(0, 0);
+              -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+              -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+              -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+              transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+            }
+            .radio input[type="radio"] {opacity: 0; }
+            .radio input[type="radio"]:focus + label::before {
+              outline: thin dotted;
+              outline: 5px auto -webkit-focus-ring-color;
+              outline-offset: -2px;
+            }
+            .radio input[type="radio"]:checked + label::after {
+              -webkit-transform: scale(1, 1);
+              -ms-transform: scale(1, 1);
+              -o-transform: scale(1, 1);
+              transform: scale(1, 1);
+            }
+            .radio input[type="radio"]:disabled + label {opacity: 0.65; }
+            .radio input[type="radio"]:disabled + label::before {cursor: not-allowed; }
+            .radio.radio-inline {margin-top: -45px; }
+            .radio-primary input[type="radio"] + label::after {background-color: #428bca; }
+            .radio-primary input[type="radio"]:checked + label::before {border-color: #428bca; }
+            .radio-primary input[type="radio"]:checked + label::after {background-color: #428bca; }
+            .nn{font-size: 12px;
+                margin-bottom: 12px;
+                width: 100%;
+                font-weight: 600;
+            }
+            .mm3 {margin-left: -114px;}
+            @media (max-width: 768px) {
+            .mm3 {margin-left: 0px;}line-height: 38px;}
+            
+            /*form validation*/
+            small.help-block{color:red;}
+            /*label.error {
+                position:initial;
+                outline: unset;
+                display: inline-block !important;
+                color:red !important;
+                margin-bottom: 0px !important;
+                padding:5px !important;
+            }*/
+            #map {height: 100%;}
+        </style>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+        <div class="wrapper">
+             <header class="fixed">
+                <div class="top-bar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                <address class="contact-num">
+                                    <span><i class="fa fa-phone"></i> 99893 54333</span>
+                                </address>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                <div class="log-details">
+                                </div><!--log-details end-->
+                            </div>
+                        </div>
+                    </div>
+                </div><!--top-bar end-->
+                <div class="bottom-header">
+                    <div class="container">
+                        <div class="navigation text-right">
+                            <nav>
+                                <ul>
+                                    <li><a href="index.html" title="">Group Buying</a></li>
+                                    <li><a href="builders.html" title=""> Builders</a></li>
+                                    <li><a href="investor-1.html" title="">Investment</a></li>
+                                </ul>
+                            </nav>
+                        </div><!--navigation end-->
+                        <div class="logo text-center">
+                            <a href="index.html" title="">
+                                <img src="assets/images/HGH-V2-5-white.png" alt="" style="width: 177px;margin-top: 28px;">
+                            </a>
+                        </div>
+                        <div class="navigation float-right text-left">
+                            <nav>
+                                <ul>
+                                    <li><a href="nri-1.html" title="">NRI Services</a></li>
+                                    <li><a href="blog.html" title="">Blog</a></li>
+                                    <li><a href="contact.html" title="">Reach Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="menu-btn">
+                            <a href="#" title="">
+                                <span class="bar1"></span>
+                                <span class="bar2"></span>
+                                <span class="bar3"></span>
+                            </a>
+                        </div><!--menu-btn end-->
+                    </div>
+                </div><!--bottom-header end-->
+            </header><!--header end-->
+            <div class="responsive-mobile-menu">
+                <ul>
+                    <li><a class="active" href="index.html" title="">Group Buying</a></li>
+                    <li><a href="builders.html" title=""> Builders</a></li>
+                    <li><a href="investor-1.html" title="">Investment</a></li>
+                    <li><a href="nri-1.html" title="">NRI Services</a></li>
+                    <li><a href="blog.html" title="">Blog</a></li>
+                    <li><a href="contact.html" title="">Reach Us</a></li>
+                </ul>
+            </div><!--responsive-mobile-menu end-->
+            <section class="page-content half-map pt-0">
+                <div class="container-full">
+                    <div class="page-content-details">
+                        <div class="row">
+                            <div class="col-lg-6 pl-0 pr-0 half-mpy">
+                                <div id="map-container" class="fullwidth-home-map">
+                                    <!--<div id="map" data-map-zoom="9" style="position: relative; overflow: hidden;">
+                                        <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
+                                            <div class="gm-err-container"><div class="gm-err-content">
+                                                <div class="gm-err-icon">
+                                                    <img src="https://maps.gstatic.com/mapfiles/api-3/images/icon_error.png" draggable="false" style="user-select: none;">
+                                                </div>
+                                                <div class="gm-err-title">Oops! Something went wrong.</div>
+                                                <div class="gm-err-message">This page didn't load Google Maps correctly. See the JavaScript console for technical details.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>-->
+                                <div id="map"></div>
+                                </div>
+                            </div>
+    						 <div class="col-lg-2 pl-0 pr-0 order--1 half-wd" ></div>
+                            <div class="col-lg-4 pl-0 pr-0 order--1 half-wd" >
+                                <div class="widget widget-search-properties mm3" style="background-color: #6630744a;">
+                                    <h4 style="text-align: center;font-size: 19px;    color: #663074;">Post your requirment</h4>
+                                    <hr>
+                                    <input type="radio" id="indvRdo" name="aorb" onClick="hideB()" checked > <label for="indvRdo"><font style="color: #000;padding: 21px;">Individual </font></label>
+                                    <input type="radio" id="groupRdo" name="aorb" onClick="hideA()"><label for="groupRdo"><font style="color: #000;padding: 21px;"> Group </font></label>
+                                    <div id="A"><br/> 
+                                        <form id="individualForm" method="POST" action="dbService.php">
+                                            <input type="hidden" name="type" value="individual" />
+                                            <div class="row">	
+    											<div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="indvName">Name <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" id="indvName" name="indvName" required>
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+                                                <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="indvMobile">Phone Number <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" id="indvMobile" name="indvMobile" required>
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+                                                <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="indvEmail">Email Address <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" id="indvEmail" name="indvEmail" required style="text-transform: unset !important;">
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+    											<div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn">Property Type <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="row">
+                                    					    <div class="col-lg-3">
+                                                                <div class="checkbox checkbox-inline">
+                                                                    <input type="checkbox" id="indvPropRes" value="Residential" name="indvPropType[]">
+                                                                    <label for="indvPropRes" style="font-size: 13px;"> Residential </label>
+                                                                </div>
+                                        					</div>
+                                        					<div class="col-lg-3">
+                                                                <div class="checkbox checkbox-success checkbox-inline">
+                                                                    <input type="checkbox" id="indvPropCom" value="Commercial" name="indvPropType[]">
+                                                                    <label for="indvPropCom" style="font-size: 13px;"> Commercial </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+                                                <!--<div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="pac-input">Location Preference <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" id="pac-input" name="pac-input">
+                                                        </div>
+                                                    </div>
+                                                </div>-->
+    											<div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="indvLocPref">Location Preference <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" id="indvLocPref" name="indvLocPref">
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+    											<div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="indvPincode">Pin Code <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" value="" id="indvPincode" name="indvPincode">
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+                                                <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="indvLandsize">Land Size <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" value="" id="indvLandsize" name="indvLandsize">
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+                                                <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="indvBudgetType">Budget Type <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="custom-select">
+                                                            <select id="indvBudgetType" name="indvBudgetType">
+                                                                <option value="0">All Statuses</option>
+                                                                <option value="Status 1">Status 1</option>
+                                                                <option value="Status 2">Status 2</option>
+                                                                <option value="Status 3">Status 3</option>
+                                                                <option value="Status 4">Status 4</option>
+                                                            </select>
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+    											<div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="indvLandmark">Land Mark <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" value="" id="indvLandmark" name="indvLandmark">
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+    											<h3 style="margin: 20px 4px 20px;">Alert Preference </h3>
+                                                <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn">Alert Frequency <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="row">
+    					                                    <div class="col-lg-3">
+                                                                <div class="checkbox checkbox-inline">
+                                                                    <input type="checkbox" id="indvAlertFreqDaily" value="Daily" name="indvAlertFreq[]">
+                                                                    <label for="indvAlertFreqDaily" style="font-size: 13px;"> Daily </label>
+                                                                </div>
+    					                                    </div>
+    					                                    <div class="col-lg-3">
+                                                                <div class="checkbox checkbox-success checkbox-inline">
+                                                                    <input type="checkbox" id="indvAlertFreqWeekly" value="Weekly" name="indvAlertFreq[]">
+                                                                    <label for="indvAlertFreqWeekly" style="font-size: 13px;"> Weekly </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <div class="checkbox checkbox-inline">
+                                                                    <input type="checkbox" id="indvAlertFreqMonthly" value="Monthly" name="indvAlertFreq[]">
+                                                                    <label for="indvAlertFreqMonthly" style="font-size: 13px;"> Monthly </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+                                                <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn">Name You Alert <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" value="" id="indvNameUAlert" name="indvNameUAlert">
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+                                                <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <p id='indvForm-result' style="margin-top: 15px;"></p>
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+                                                <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <button type="submit" id="indvSubmitBtn" class="lnk-default" style="width: 100%;">Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div style="margin-top: -312%; visibility:hidden" id="B"><br/>
+                                        <form id="groupForm" method="POST" action="dbService.php">
+                                            <input type="hidden" name="type" value="group" />
+                                            <div class="row">
+    										    <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" id="groupName">Group Name <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" id="groupName" name="groupName">
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+                                                <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="groupTeamsize">Team Size <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" id="groupTeamsize" name="groupTeamsize">
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+                                                <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="groupContactPerson">Contact Person <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" id="groupContactPerson" name="groupContactPerson">
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+                                                 <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="groupMobile">Contact Mobile Number <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" id="groupMobile" name="groupMobile">
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+                                                <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="groupEmail">Contact Email Address <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" id="groupEmail" name="groupEmail">
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+                                            	<div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn">Property Type <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="row">
+                                        				    <div class="col-lg-3">
+                                                                <div class="checkbox checkbox-inline">
+                                                                    <input type="checkbox" id="inlineCheckbox14" value="Residential" name="groupPropType[]">
+                                                                    <label for="inlineCheckbox14" style="font-size: 13px;"> Residential </label>
+                                                                </div>
+                                    					    </div>
+                                        					<div class="col-lg-3">
+                                                                <div class="checkbox checkbox-success checkbox-inline">
+                                                                    <input type="checkbox" id="inlineCheckbox15" value="Commercial" name="groupPropType[]">
+                                                                    <label for="inlineCheckbox15" style="font-size: 13px;"> Commercial </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+    											<div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="groupLocPref"> location Preference<font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" id="groupLocPref" name="groupLocPref">
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+    											<div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="groupPincode">Pin Code <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" id="groupPincode" name="groupPincode">
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+                                                <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="groupLandsize">Land Size <font style="color: red;font-size: 24px;">*</font></label>
+                                                       <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" id="groupLandsize" name="groupLandsize">
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+                                                <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="groupBudgetType">Budget Type <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="custom-select">
+                                                            <select name="groupBudgetType" id="groupBudgetType">
+                                                                <option value="All">All Statuses</option>
+                                                                <option value="Status1">Status 1</option>
+                                                                <option value="Status2">Status 2</option>
+                                                                <option value="Status3">Status 3</option>
+                                                                <option value="Status4">Status 4</option>
+                                                            </select>
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+    											<div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="groupLandmark">Land Mark <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" id="groupLandmark" name="groupLandmark">
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+    											<h3 style="margin: 20px 4px 20px;">Alert Preference </h3>
+                                                <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn">Alert Frequency <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="row">
+    					                                    <div class="col-lg-3">
+                                                                <div class="checkbox checkbox-inline">
+                                                                    <input type="checkbox" id="inlineCheckbox11" name="groupAlertFreq[]" value="Daily" >
+                                                                    <label for="inlineCheckbox11" style="font-size: 13px;"> Daily </label>
+                                                                </div>
+    				                                        </div>
+                                        					<div class="col-lg-3">
+                                                                <div class="checkbox checkbox-success checkbox-inline">
+                                                                    <input type="checkbox" id="inlineCheckbox12" name="groupAlertFreq[]" value="Weekly">
+                                                                    <label for="inlineCheckbox12" style="font-size: 13px;"> Weekly </label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <div class="checkbox checkbox-inline">
+                                                                    <input type="checkbox" id="inlineCheckbox13" name="groupAlertFreq[]" value="Monthly">
+                                                                        <label for="inlineCheckbox13" style="font-size: 13px;"> Monthly </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+                                                <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <label class="nn" for="groupNameUAlert">Name You Alert <font style="color: red;font-size: 24px;">*</font></label>
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <input type="text" id="groupNameUAlert" name="groupNameUAlert">
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+                                                <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <div class="form-field">
+                                                        <div class="handle-counter" id="handleCounter2">
+                                                            <p id='groupForm-result' style="margin-top: 15px;"></p>
+                                                        </div>
+                                                    </div><!--form-field end-->
+                                                </div>
+                                                <div class="col-lg-12" style="margin-top: 8px;">
+                                                    <button id="groupSubmitBtn" type="submit" class="lnk-default" style="width: 100%;">Submit</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div><!--widget-search-properties end-->
+                            </div>
+                            <div class="col-lg-1 pl-0 pr-0 order--1 half-wd"></div>
+    				    </div>
+                    </div><!--page-content-details end-->
+                </div>
+            </section><!--page-content end-->
+            <div class="popup">
+                <div class="popup-content">
+                    <div class="popup-head">
+                        <ul>
+                            <li class="active" data-tab="login"><a href="#" title="">Log in</a></li>
+                        </ul>
+                    </div><!--popup-head end-->
+                    <div class="popup-form current" id="login">
+                        <form>
+                            <div class="form-field">
+                                <input type="text" name="name" placeholder="Name">
+                            </div><!--form-field end-->
+                            <div class="form-field">
+                                <input type="password" name="password" placeholder="Password">
+                            </div><!--form-field end-->
+                            <div class="form-submit">
+                                <button type="submit" class="lnk-default">Log in</button>
+                                <a href="#" title="" class="register-op" data-tab="register">Lost your password?</a>
+                            </div><!--form-submit end-->
+                        </form>
+                        <div class="other-log-options">
+                            <a href="#" title="">Log In with Facebook</a>
+                        </div><!--other-log-options end-->
+                    </div><!--popup-form end-->
+                </div><!--popup-content end-->
+            </div><!--popup end-->
+        </div><!--wrapper end-->
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery-ui.js"></script>
+        <script src="assets/js/custom-select.js"></script>
+        <!-- Maps -->
+        <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI2VpqUiP20W572BX9AM-UaPpWohe7Zec&callback=initMap&libraries=&v=weekly" defer></script>-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI2VpqUiP20W572BX9AM-UaPpWohe7Zec&callback=initMap&libraries=places&v=weekly" defer></script>
+        <!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI2VpqUiP20W572BX9AM-UaPpWohe7Zec"></script>-->     <!--AIzaSyB0lxCRSHcNPBu5hq3wsmY1KhcBq5Tlwi8-->
+        <!--<script src="assets/js/map-cluster/infobox.min.js"></script>
+        <script src="assets/js/map-cluster/markerclusterer.js"></script>
+        <script src="assets/js/map-cluster/maps.js"></script>-->
+        <!-- Custom Js Script File -->
+        <script src="assets/js/scripts.js"></script>
+        <!--<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>-->
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous"></script>
+        <script>
+            function initMap() {
+                const myLatLng = { lat: 17.4084, lng: 78.4505 };
+                const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 14,
+                    center: myLatLng,
+                });
+                new google.maps.Marker({
+                    position: myLatLng,
+                    map,
+                    title: "Hello World!",
+                });
+                /*const input = document.getElementById("pac-input");
+                const autocomplete = new google.maps.places.Autocomplete(input);
+                autocomplete.bindTo("bounds", map);
+                // Set the data fields to return when the user selects a place.
+                autocomplete.setFields(["address_components","geometry","icon","name",]);*/
+            }
+        </script>
+        <script language="Javascript">
+            //forms hide show
+            function hideA()
+            {
+                document.getElementById("A").style.visibility="hidden";
+                document.getElementById("B").style.visibility="visible";    
+            }
+            function hideB()
+            {
+                document.getElementById("B").style.visibility="hidden";
+                document.getElementById("A").style.visibility="visible";
+            }
+            $(document).ready(function(){
+                //individual form validator
+                $('#individualForm').bootstrapValidator({
+                    // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+                    feedbackIcons: {
+                        valid: 'glyphicon glyphicon-ok',
+                        invalid: 'glyphicon glyphicon-remove',
+                        validating: 'glyphicon glyphicon-refresh'
+                    },
+                    fields: {
+                        indvName: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'Name is required'
+                                },
+                                stringLength: {
+                                    min: 2,
+                                    max: 30,
+                                    message: 'The Name must be more than 2 and less than 30 characters long'
+                                },
+                                regexp: {
+                                    regexp: /^[a-zA-Z0-9. ]+$/,
+                                    message: 'The Name can only consist of alphabetical and number'
+                                }
+                            }
+                        },
+                        indvMobile:{
+                            validators: {
+                                notEmpty: {
+                                    message: 'phone number is required and cannot be empty'
+                                },
+                                regexp: {
+                                    regexp: /^[0-9+\(\) -]+$/,
+                                    message: 'The phone number can only accept numbers and +()- symbols'
+                                }
+                            }
+                        },
+                        indvEmail:{
+                            validators: {
+                                notEmpty: {
+                                    message: 'Email address is required and cannot be empty'
+                                },
+                                emailAddress: {
+                                    message: 'The email address is not a valid'
+                                }
+                            }
+                        },
+                        'indvPropType[]':{
+                            validators: {
+                                choice: {
+                                    min: 1,
+                                    message: 'Please Select Property Tyep'
+                                }
+                            }
+                        },
+                        indvLocPref:{
+                            validators: {
+                                notEmpty: {
+                                    message: 'Location Preference is required'
+                                },
+                                stringLength: {
+                                    min: 3,
+                                    max: 50,
+                                    message: 'Location Preference must be more than 3 and less than 50 characters long'
+                                },
+                                regexp: {
+                                    regexp: /^[a-zA-Z0-9. ]+$/,
+                                    message: 'The Name can only consist of alphabetical and number'
+                                }
+                            }
+                        },
+                        indvPincode:{
+                            validators: {
+                                notEmpty: {
+                                    message: 'PinCode number is required and cannot be empty'
+                                },
+                                regexp: {
+                                    regexp: /^[0-9+\(\) -]+$/,
+                                    message: 'The Pincode can only accept numbers and +()- symbols'
+                                }
+                            }
+                        },
+                        indvLandsize:{
+                            validators: {
+                                notEmpty: {
+                                    message: 'Land Size is required'
+                                }
+                            }
+                        },
+                        indvBudgetType:{
+                            validators: {
+                                notEmpty: {
+                                    message: 'Budget Type is required'
+                                }
+                            }
+                        },
+                        indvLandmark:{
+                            validators: {
+                                notEmpty: {
+                                    message: 'Land Mark is required'
+                                }
+                            }
+                        },
+                        'indvAlertFreq[]':{
+                            validators: {
+                                choice: {
+                                    min: 1,
+                                    message: 'Alert Frequencey is required'
+                                }
+                            }
+                        },
+                        indvNameUAlert:{
+                            validators: {
+                                notEmpty: {
+                                    message: 'This field is required'
+                                }
+                            }
+                        }
+                    }
+                });
+                
+                $('#indvSubmitBtn').on('click',function(e){
+                    e.preventDefault();
+                    var $this = $(this);
+                    var form_btn = $this;
+                    $('#individualForm').data('bootstrapValidator').validate();
+                    var valid= $('#individualForm').data('bootstrapValidator').isValid();
+                    if(valid){
+                        var form = '#individualForm';
+                        form_btn.prop('disabled', true).html(form_btn_old_msg);
+                        var form_btn_old_msg = $('#indvSubmitBtn').html();
+                        $('#indvSubmitBtn').html('Please wait...');
+                        $(form).ajaxSubmit({
+                            dataType:  'json',
+                            success: function(data) {
+                                console.log(data);
+                                $(form).data('bootstrapValidator').resetForm();
+                                // $('.chkServ').prop('checked',false);
+                                $('#indvForm-result').removeClass();
+                                if( data.status === true ) {
+                                    $('#indvForm-result').addClass('alert alert-success');
+                                    $("#individualForm")[0].reset()
+                                }
+                                else{
+                                    $('#indvForm-result').addClass('alert alert-danger');
+                                }
+                                form_btn.prop('disabled', false).html(form_btn_old_msg);
+                                $('#indvForm-result').html(data.msg).fadeIn('slow');
+                                setTimeout(function(){ $('#indvForm-result').fadeOut('slow').html(''); }, 6000);
+                            },
+                            error:function(err){
+                                form_btn.prop('disabled', false).html(form_btn_old_msg);
+                                console.log(err);
+                            }
+                        });
+                    }
+                });
+                
+                //group form validator
+                $('#groupForm').bootstrapValidator({
+                    // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+                    feedbackIcons: {
+                        valid: 'glyphicon glyphicon-ok',
+                        invalid: 'glyphicon glyphicon-remove',
+                        validating: 'glyphicon glyphicon-refresh'
+                    },
+                    fields: {
+                        groupName: {
+                            validators: {
+                                notEmpty: {
+                                    message: 'Name is required'
+                                },
+                                stringLength: {
+                                    min: 2,
+                                    max: 30,
+                                    message: 'The Name must be more than 2 and less than 30 characters long'
+                                },
+                                regexp: {
+                                    regexp: /^[a-zA-Z0-9. ]+$/,
+                                    message: 'The Name can only consist of alphabetical and number'
+                                }
+                            }
+                        },
+                        groupTeamsize:{
+                            validators: {
+                                notEmpty: {
+                                    message: 'Team Size is required and cannot be empty'
+                                },
+                                regexp: {
+                                    regexp: /^[0-9]+$/,
+                                    message: 'Team Size can only accept numbers'
+                                }
+                            }
+                        },
+                        groupContactPerson:{
+                            validators: {
+                                notEmpty: {
+                                    message: 'Contact Persion Name is required'
+                                },
+                                stringLength: {
+                                    min: 2,
+                                    max: 30,
+                                    message: 'Contact Persion Name must be more than 2 and less than 30 characters long'
+                                },
+                                regexp: {
+                                    regexp: /^[a-zA-Z0-9. ]+$/,
+                                    message: 'Contact Persion Name can only consist of alphabetical and number'
+                                }
+                            }
+                        },
+                        groupMobile:{
+                            validators: {
+                                notEmpty: {
+                                    message: 'phone number is required and cannot be empty'
+                                },
+                                regexp: {
+                                    regexp: /^[0-9+\(\) -]+$/,
+                                    message: 'The phone number can only accept numbers and +()- symbols'
+                                }
+                            }
+                        },
+                        groupEmail:{
+                            validators: {
+                                notEmpty: {
+                                    message: 'Email address is required and cannot be empty'
+                                },
+                                emailAddress: {
+                                    message: 'The email address is not a valid'
+                                }
+                            }
+                        },
+                        'groupPropType[]':{
+                            validators: {
+                                choice: {
+                                    min: 1,
+                                    message: 'Please Select Property Tyep'
+                                }
+                            }
+                        },
+                        groupLocPref:{
+                            validators: {
+                                notEmpty: {
+                                    message: 'Location Preference is required'
+                                },
+                                stringLength: {
+                                    min: 3,
+                                    max: 50,
+                                    message: 'Location Preference must be more than 3 and less than 50 characters long'
+                                },
+                                regexp: {
+                                    regexp: /^[a-zA-Z0-9. ]+$/,
+                                    message: 'The Name can only consist of alphabetical and number'
+                                }
+                            }
+                        },
+                        groupPincode:{
+                            validators: {
+                                notEmpty: {
+                                    message: 'PinCode number is required and cannot be empty'
+                                },
+                                regexp: {
+                                    regexp: /^[0-9+\(\) -]+$/,
+                                    message: 'The Pincode can only accept numbers and +()- symbols'
+                                }
+                            }
+                        },
+                        groupLandsize:{
+                            validators: {
+                                notEmpty: {
+                                    message: 'Land Size is required'
+                                }
+                            }
+                        },
+                        groupBudgetType:{
+                            validators: {
+                                notEmpty: {
+                                    message: 'Budget Type is required'
+                                }
+                            }
+                        },
+                        groupLandmark:{
+                            validators: {
+                                notEmpty: {
+                                    message: 'Land Mark is required'
+                                }
+                            }
+                        },
+                        'groupAlertFreq[]':{
+                            validators: {
+                                choice: {
+                                    min: 1,
+                                    message: 'Alert Frequencey is required'
+                                }
+                            }
+                        },
+                        groupNameUAlert:{
+                            validators: {
+                                notEmpty: {
+                                    message: 'This field is required'
+                                }
+                            }
+                        }
+                    }
+                });
+                
+                $('#groupSubmitBtn').on('click',function(e){
+                    e.preventDefault();
+                    var $this = $(this);
+                    var form_btn = $this;
+                    $('#groupForm').data('bootstrapValidator').validate();
+                    var valid= $('#groupForm').data('bootstrapValidator').isValid();
+                    if(valid){
+                        var form = '#groupForm';
+                        form_btn.prop('disabled', true).html(form_btn_old_msg);
+                        var form_btn_old_msg = $('#groupSubmitBtn').html();
+                        $('#groupSubmitBtn').html('Please wait...');
+                        $(form).ajaxSubmit({
+                            dataType:  'json',
+                            success: function(data) {
+                                $(form).data('bootstrapValidator').resetForm();
+                                // $('.chkServ').prop('checked',false);
+                                $('#groupForm-result').removeClass();
+                                if( data.status === true ) {
+                                    $('#groupForm-result').addClass('alert alert-success');
+                                    $('#groupForm')[0].reset()
+                                }
+                                else{
+                                    $('#groupForm-result').addClass('alert alert-danger');
+                                }
+                                form_btn.prop('disabled', false).html(form_btn_old_msg);
+                                $('#groupForm-result').html(data.msg).fadeIn('slow');
+                                setTimeout(function(){ $('#groupForm-result').fadeOut('slow').html(''); }, 6000);
+                            },
+                            error:function(err){
+                                alert('error');
+                                form_btn.prop('disabled', false).html(form_btn_old_msg);
+                                console.log(err);
+                                $('#groupForm-result').html(err.responseText);
+                            }
+                        });
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
